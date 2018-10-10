@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wolverine.cafe.MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/images2"
+            android:scaleType="centerCrop"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="60sp"
+                android:textColor="#ffff"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/cafe_logo"
+                android:text="NESCAFE"
+                android:id="@+id/nescafe_txt"/>
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/cafe_logo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/cafe5"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nescafe is A cafe that offers Tea - Coffee - Cappuccino and other hot drinks."
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_below="@id/nescafe_txt"
+                android:padding="20dp"
+                android:textColor="#ffff"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"
+                android:id="@+id/description_txt"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/description_txt"
+                android:id="@+id/phone_txt"
+                android:paddingLeft="20dp"
+                android:text="Phone : 0123456789"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffff"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/email_txt"
+                android:layout_below="@+id/phone_txt"
+                android:paddingLeft="20dp"
+                android:text="Email : nescafe@gmail.com"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffff"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Website : www.nescafe.com"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffff"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"
+                android:id="@+id/web_txt"
+                android:layout_below="@id/email_txt"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="20dp"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
